@@ -5,7 +5,7 @@ from langchain.schema import HumanMessage, SystemMessage
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 api_key = st.secrets["OPENAI_KEY"]
 model = ChatOpenAI(openai_api_key=api_key,
-                   model='GPT-4o mini',
+                   model='gpt-4o-mini',
                    streaming=True,
                    callbacks=[StreamingStdOutCallbackHandler()],
                    verbose=True)
